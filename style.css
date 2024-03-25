@@ -1,0 +1,299 @@
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('font/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('font/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/TTLakes-Regular.woff') format('woff'),
+        url('font/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('font/TTLakes-Medium.eot');
+    src: local('TT Lakes Medium'), local('TTLakes-Medium'),
+        url('font/TTLakes-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/TTLakes-Medium.woff') format('woff'),
+        url('font/TTLakes-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('font/TTLakes-ExtraBold.eot');
+    src: local('TT Lakes ExtraBold'), local('TTLakes-ExtraBold'),
+        url('font/TTLakes-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/TTLakes-ExtraBold.woff') format('woff'),
+        url('font/TTLakes-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+html
+{
+    font-family: 'TT Lakes';
+}
+
+html *
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    background-color: #F8F8F8;
+}
+
+a
+{
+    display: flex; /*Don't know why i used this here. Likely tried to affect the .article__read-more element. Moving it now affects too many elements, so i'm going to keep it here.*/
+    
+    height: max-content;
+    width: max-content;
+    
+    color: inherit;
+    text-decoration: none;
+}
+
+.title-services
+{
+    font-size: 28px;
+    font-weight:800;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+}
+
+.menu
+{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    
+    background-color: #FFF;
+    box-shadow: 0 1px 0 #41F6D7;
+}
+
+.menu__element
+{
+    margin: 16px 0 16px 16px;
+}
+
+.menu__icon
+{
+    border-radius: 100%;
+}
+
+.menu__icon:last-child
+{
+    margin-right: 16px;
+}
+
+.menu__logo
+{
+    margin-right: auto;
+}
+
+.menu__divider
+{
+    width: 2px;
+    height: 32px;
+    
+    border-radius: 1px;
+    
+    background-color: #EAEAEA;
+}
+
+.menu__divider1--display
+{
+    display: none;
+}
+
+.header
+{
+    display:flex;
+    
+    margin-top: 24px;
+    
+    letter-spacing: -0.6px;
+}
+
+.header__highlight
+{
+    width:4px;
+    height:40px;
+    
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+    margin-right: 16px;
+    
+    background-color: #41F6D7;
+}
+
+.services
+{
+    display: flex;
+    overflow: auto;
+    
+    margin-top: 24px;
+    margin-bottom: 24px;
+    
+    white-space: nowrap;
+    
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;   
+    color: #7E7E82;
+}
+
+.services__service
+{
+    border: solid 2px transparent;
+    border-radius: 8px;
+    
+    padding: 8px 16px;
+    margin-left: 16px;
+}
+
+.services__service:last-child
+{
+    margin-right: 16px;
+}
+
+.services__service:hover
+{
+    background-color: white;
+    border-color: #B8FFEC;
+}
+
+.article
+{
+    margin-bottom: 35px;
+}
+
+.article__text
+{
+    overflow: hidden; 
+    
+    max-height:90px;
+    min-width:288px;
+    
+    margin-left: 16px;
+    margin-right: 16px;
+    
+    text-align: left;
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+.article__text-container
+{
+    overflow: auto;
+}
+
+
+.article__read-more
+{
+    align-items: center;
+    
+    width: 132;
+    height: 24;
+    
+    margin: 16px;
+    
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.article__photo
+{
+    width: 100%;
+    height:auto;
+}
+
+
+
+@media screen and (min-width: 530px)
+{
+    .menu__divider1--display{display: block;}
+    .menu__divider2--display{display: none;}    
+}
+
+
+
+@media screen and (min-width: 768px)
+{
+    
+    .services
+    {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    
+    .article__container
+    {
+        display: flex;
+        flex-direction: column;
+        flex:1;
+    }
+    
+    .article
+    {
+        display: flex;
+        
+        margin-right: 25px;
+        margin-bottom: 40px;
+    }
+    
+    .article__text
+    {
+        max-height:160px;
+        min-width:312px;
+        
+        line-height: 20px;
+    }
+    
+    /*
+    Applies well to a <div> container, but works differently on pure <img>, why?
+    Why do i have to place <img> into a container?
+    Even with "block" display type <img> acts differently.
+    */    
+    .article__photo-container
+    {
+        flex:1;
+        
+        border-radius: 10px;
+        
+        margin-left:48px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    
+    .services
+    {
+        flex-wrap: wrap;
+        
+        height: 90px;
+    }
+    
+    .article
+    {
+        margin-bottom: 50px;
+    }
+    
+    .article__text
+    {
+        min-width:490px;
+    }
+    
+    
+}

@@ -1,0 +1,26 @@
+body
+    menu
+        button1
+        divider
+        logo
+        space
+        button2
+        button3
+        button4
+        divider
+        button5
+        button6
+    content
+        header
+        nav-menu
+            repairable brands
+            repairable devices
+            service prices
+            service center locations
+            special prices
+            reviews
+
+        article
+            text
+            image
+            link(read further)
