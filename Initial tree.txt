@@ -1,26 +1,31 @@
 body
-    menu
-        button1
-        divider
-        logo
-        space
-        button2
-        button3
-        button4
-        divider
-        button5
-        button6
-    content
+    block
         header
-        nav-menu
-            repairable brands
-            repairable devices
-            service prices
-            service center locations
-            special prices
-            reviews
-
-        article
-            text
-            image
-            link(read further)
+            header_submenu
+                logo1
+                cps_logo
+                logo2
+        main
+            menu
+                ul
+                  li a (Ремонт техники)
+                  li a (Услуги и сервисы)
+                  li a (Корпоративным клиентам)
+                  li a (Продавцам техники)
+                  li a (Партнерам)
+                  li a (Производителям)
+                  li a (Наши сервисные центры)
+                  li a (Контакты)
+        footer
+            footer_submenu
+                logo3
+                logo4
+                logo5
+            footer_contacts
+                mail
+                number
+            footer_language_switch
+                ru
+                en
+                ch
+            

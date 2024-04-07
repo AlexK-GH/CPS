@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Мобильное меню услуг CPS">
+    <link href="s-global.css" rel="stylesheet">
+    <link href="s-page2.css" rel="stylesheet">
+    <title>CPS</title>
+</head>
+
+
+<!--.block>header>nav>ul.header-menu>li.-element*3>a^^^^main>nav>ul.main-menu>li.-element*8>a^^^^footer>ul.footer-menu>li.-element*3>a^^.footer-contacts>.-mail+.-number^.footer-language-switch>.-ru+.-en+.-ch-->
+<body>
+    <div class="block">
+        <header>
+            <nav>
+                <ul class="header-menu menu">
+                    <li class="header-menu__element menu__icon"><a href="#"         ><img alt="Закрыть меню" src="menu-icons/close.svg" ></a></li>
+                    <li class="header-menu__element menu__logo"><a href="index.html"><img alt="Лого компании" src="menu-icons/logo.svg"  ></a></li>
+                    <li class="header-menu__element menu__icon"><a href="#"         ><img alt="Поиск" src="menu-icons/search.svg"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <nav>
+                <ul class="main-menu menu">
+                    <li><a href="#"><div class="main-menu__element main-menu__element--active">Ремонт техники</div></a></li>
+                    <li><a href="#"><div class="main-menu__element"                           >Услуги и сервисы</div></a></li>
+                    <li><a href="#"><div class="main-menu__element"                           >Корпоративным клиентам</div></a></li>
+                    <li><a href="#"><div class="main-menu__element"                           >Продавцам техники</div></a></li>
+                    <li><a href="#"><div class="main-menu__element"                           >Партнерам</div></a></li>
+                    <li><a href="#"><div class="main-menu__element"                           >Производителям</div></a></li>
+                    <li><a href="#"><div class="main-menu__element"                           >Наши сервисные центры</div></a></li>
+                    <li><a href="#"><div class="main-menu__element"                           >Контакты</div></a></li>
+                </ul>
+            </nav>
+        </main>
+        <footer>
+            <ul class="footer-menu menu">
+                <li class="footer-menu__element menu__icon"><a href="#"><img alt="Позвонить нам" src="menu-icons/call.svg"   ></a></li>
+                <li class="footer-menu__element menu__icon"><a href="#"><img alt="Открыть чат" src="menu-icons/chat.svg"   ></a></li>
+                <li class="footer-menu__element menu__icon"><a href="#"><img alt="Профиль" src="menu-icons/profile.svg"></a></li>
+            </ul>
+            <div  class="footer-contacts">
+                <div class="footer-contacts__mail">mail@cps.com</div>
+                <div class="footer-contacts__number">8 800 890 8900</div>
+            </div>
+            <div aria-label="Выбор языка" role="menu" class="footer-lang-switch">
+                <div aria-label="Русский" role="russian" class="footer-lang-switch__ru footer-lang-switch__element footer-lang-switch__element--active">RU</div>
+                <div aria-label="Английский" role="english" class="footer-lang-switch__en footer-lang-switch__element">EN</div>
+                <div aria-label="Китайский" role="chinese" class="footer-lang-switch__ch footer-lang-switch__element">CH</div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
