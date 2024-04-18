@@ -1,4 +1,4 @@
 GitHub Pages ссылка:
-https://alexk-gh.github.io/CPS/index2.html
+https://alexk-gh.github.io/CPS/index3.html
 
-Нажмите на лого компании для перехода на другую страницу.
+Нажмите на заголовок/лого компании для перехода на другую страницу.
