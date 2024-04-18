@@ -15,6 +15,7 @@ let pagination_container;
 let swiper_pagination;
 let contentButton = document.querySelector(".button-show-hide-content");
 let contentButtonText = document.querySelector(".button-show-hide-content__text");
+let contentButtonArrow = document.querySelector(".button-show-hide-content__icon");
 
 let company_block_template = document.getElementById("company-block-template").content;
 
@@ -149,7 +150,7 @@ function calculateContentVisibility()
             //         hide last (total result)(~5) elements
             {company_slides[i].style.display = "none";}//button-content = "show more"
             contentButtonText.textContent = "Показать все";
-            
+            contentButtonArrow.style.transform = "scale(1, 1)";
          }   
          else
          {
@@ -159,7 +160,7 @@ function calculateContentVisibility()
                 c_slide.style.display = "flex";
             });
             contentButtonText.textContent = "Скрыть";
-                
+            contentButtonArrow.style.transform = "scale(1, -1)";
          }
 
 }
