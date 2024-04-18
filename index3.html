@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Ремонт техники различных брендов">
+    <link href="s-global.css" rel="stylesheet">
+    <link href="s-page3.css" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>    
+    <title>CPS</title>
+</head>
+<body>
+
+    
+    <header>
+        <div class="header-block">
+            <a href="index.html"><h1 class="header-block__text header-block__text--margin">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1></a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="content-fade content-fade--left"></div>
+        <div class="content-fade content-fade--right"></div>
+        <div class="content">
+    
+        </div>
+        <button class="button-show-hide-content button-show-hide-content--margin">
+            <img class="button-show-hide-content__icon" src="menu-icons/downarrow.svg">
+            <span class="button-show-hide-content__text">Показать все</span>
+        </button>
+    </main>
+    
+    <template id="company-block-template" hidden>
+        <div class="company-block">
+            <div class="company-block__inner-frame">
+                <img class="company-block__logo" src="" alt=""></img>
+                <a class="company-block__link" href="">
+                <img class="company-block__arrow-right" src="menu-icons/arrow-right.svg"></img>
+                </a>
+            </div>
+        </div>
+    </template>  
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--script src="./js-page3-company-list.js"></script-->
+    <script src="js-page3.js" type = "module">import "./js-page3-company-list.js";</script>
+</body>
+
+</html>

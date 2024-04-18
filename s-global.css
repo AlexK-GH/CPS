@@ -62,3 +62,9 @@ ul,ol
 {
     list-style: none;
 }
+
+.test-borders
+{
+    box-sizing: border-box;
+    border: dotted red 4px;
+}
